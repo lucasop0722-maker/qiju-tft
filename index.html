@@ -110,11 +110,11 @@ const originalAssetChip=assetChip;
 assetChip=function(name,kind){return originalAssetChip(name,kind||'item').replace('class="asset-chip"','class="asset-chip '+(kind==='artifact'?'artifact-chip':'')+'"')};
 const originalAssetUrlFor=assetUrlFor;
 assetUrlFor=function(name){const file=artifactIconFiles[name];if(file){if(file.startsWith('plugins/'))return 'https://raw.communitydragon.org/latest/'+file;return 'https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/items/hexcore/'+file}return originalAssetUrlFor(name)};const positionPlans={
- 'rift-draven-ed':{front:['Maokai','Kennen','Taric','Amumu','Sentinel'],solo:'Maokai',mid:['Gnar','Ivern','Elder Dragon'],back:['Draven'],note:'茂凯单顶正中吸收第一轮仇恨；其他坦克与近战的远古巨龙分列第二线。德莱文和远程艾翁放最后排两侧。若敌方有直线穿透技能，把德莱文移到另一侧。'},
+ 'rift-draven-ed':{front:['Maokai','Kennen','Taric','Amumu','Sentinel'],solo:'Maokai',mid:['Gnar','Elder Dragon'],back:['Ivern','Draven'],note:'茂凯单顶正中吸收第一轮仇恨；其他坦克与近战的远古巨龙分列第二线。德莱文和远程艾翁放最后排两侧。若敌方有直线穿透技能，把德莱文移到另一侧。'},
  'rift-brambleback':{front:['Maokai','Kennen','Taric','Sentinel','Elder Dragon'],solo:'Maokai',mid:['Brambleback','Gnar'],back:['Ivern','Draven'],note:'茂凯单顶中间；荆棘兽放第二排边侧，避免与主坦同时被集火并尽快接敌。德莱文最后排，远古巨龙按其技能威胁放前排边侧。'},
  'elderwood-draven':{front:['Maokai','Alistar','Amumu','Kennen','Taric'],solo:'Maokai',mid:['Gnar'],back:['Ivern','Draven','Ezreal'],note:'茂凯单顶中间，阿利斯塔、阿木木与凯南错开在第二线；德莱文和伊泽瑞尔最后排分居两侧，防止同吃范围伤害。'},
  'solar-yunara':{front:['Sejuani','Leona','Taric','Yorick'],solo:'Sejuani',mid:[],back:['Azir','Kayle','LeBlanc','Karma','Yunara'],note:'瑟庄妮单顶中间承伤，其余近战坦克分列第二线；云娜拉与卡尔玛最后排分两侧，阿兹尔、凯尔和乐芙兰也留在后排。'},
- 'rift-maokai':{front:['Maokai','Kennen','Taric','Amumu','Sentinel'],solo:'Maokai',mid:['Gnar','Ivern','Elder Dragon'],back:['Draven'],note:'茂凯单顶中间；其他近战前排错位站第二线。德莱文最后排安全侧，远古巨龙放另一侧前排边位，按敌方控制方向调整。'},
+ 'rift-maokai':{front:['Maokai','Kennen','Taric','Amumu','Sentinel'],solo:'Maokai',mid:['Gnar','Elder Dragon'],back:['Ivern','Draven'],note:'茂凯单顶中间；其他近战前排错位站第二线。德莱文最后排安全侧，远古巨龙放另一侧前排边位，按敌方控制方向调整。'},
  'elderwood-teemo':{front:['Alistar','Maokai','Hecarim','Taric'],solo:'Alistar',mid:['Gnar'],back:['Ivern','Morgana','Teemo','Ezreal'],note:'阿利斯塔单顶中间吸收首轮火力；茂凯、赫卡里姆与纳尔错位在第二线。提莫、莫甘娜、伊泽瑞尔最后排分散，避免范围技能同时命中。'},
  'vanguard-alune':{front:['Maokai','Taric','Leona','Sentinel'],solo:'Maokai',mid:['Kennen'],back:['Ivern','Alune','Morgana','Karma'],note:'茂凯单顶中间，其余先锋错位在第二线；阿露妮、莫甘娜与卡尔玛最后排分开站，防止被同一范围技能覆盖。'},
  'adaptor-rengar':{front:['Vi','Sett','Krug','Kobuko'],solo:'Vi',mid:['Rengar','Nidalee','Master Yi'],back:['Ivern','Gnar'],note:'蔚单顶中间承伤；雷恩加尔、奈德丽与易大师放第二线两侧，确保近战切入又不和主坦同格集火。艾翁、纳尔最后排。'},
